@@ -1,3 +1,9 @@
 <template>
-  
+  <v-sheet
+          border="dashed md"
+          color="surface-light"
+          height="200"
+          rounded="lg"
+          width="100%"
+        ></v-sheet>
 </template>
