@@ -10,13 +10,13 @@
             <v-list density="compact">
                 <v-list-subheader>Agenda</v-list-subheader>
 
-                <v-list-item
-                    v-for="(item, i) in items" :key="i" :value="item" color="primary">
+                <v-list-item v-for="(item, i) in items" :key="i" :value="item" :to="item.to" color="primary">
+
                     <template v-slot:prepend>
-                    <v-icon :icon="item.icon"></v-icon>
+                        <v-icon :icon="item.icon"></v-icon>
                     </template>
 
-                    <v-list-item-title >{{ item.text }}</v-list-item-title>
+                    <v-list-item-title to="">{{ item.text }}</v-list-item-title>
 
                 </v-list-item>
             </v-list>
@@ -29,7 +29,7 @@
             
         </v-app-bar>
 
-        <v-main class="d-flex align-center justify-center" height="300">
+        <v-main>
             <v-container>
                 <slot />
             </v-container>
@@ -48,8 +48,8 @@
     })
 
     const items = [
-    { text: 'Agendamentos', icon: 'mdi-clock' },
-    { text: 'Disponibilidade', icon: 'mdi-account' }
+    { text: 'Agendamentos', icon: 'mdi-clock', to: '/agendamentos' },
+    { text: 'Disponibilidade', icon: 'mdi-account', to: '/' }
   ]
 
 </script>
