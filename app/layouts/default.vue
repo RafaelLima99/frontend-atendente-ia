@@ -49,7 +49,7 @@
 
     const items = [
     { text: 'Agendamentos', icon: 'mdi-clock', to: '/agendamentos' },
-    { text: 'Disponibilidade', icon: 'mdi-account', to: '/' }
+    { text: 'Disponibilidade', icon: 'mdi-account', to: '/disponibilidade' }
   ]
 
 </script>
