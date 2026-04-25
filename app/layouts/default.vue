@@ -50,7 +50,8 @@
     const items = [
     { text: 'Agendamentos', icon: 'mdi-clock', to: '/agendamentos' },
     { text: 'Disponibilidade', icon: 'mdi-account', to: '/disponibilidade' },
-     { text: 'Horário de Funcionamento', icon: 'mdi-account', to: '/horario-funcionamento' }
+    { text: 'Horário de Funcionamento', icon: 'mdi-account', to: '/horario-funcionamento' },
+    { text: 'Catálogo', icon: 'mdi-account', to: '/catalogo' }
   ]
 
 </script>
